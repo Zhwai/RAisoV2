@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Guest_MasterPage.Master.cs" Inherits="RAisoV2.Views.Guest_View.GuestMP" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+            <asp:Button ID="GuestHomePageBtn" runat="server" Text="Home Page" OnClick="GuestHomePageBtn_Click"/>
+            <asp:Button ID="LoginPageBtn" runat="server" Text="Login" OnClick="LoginPageBtn_Click"/>
+            <asp:Button ID="RegisterPageBtn" runat="server" Text="Register" Onclick="RegisterPageBtn_Click"/>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

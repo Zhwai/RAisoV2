@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin_MasterPage.master.cs" Inherits="RAisoV2.Views.Admin_View.Admin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+            <asp:Button ID="AdminHomePageBtn" runat="server" Text="Home Page" OnClick="AdminHomePageBtn_Click"/>
+            <asp:Button ID="TransactionReportBtn" runat="server" Text="Transaction" OnClick="TransactionReportBtn_Click" />
+            <asp:Button ID="UpdateProfileBtn" runat="server" Text="Update Profile" OnClick="UpdateProfileBtn_Click"/>
+            <asp:Button ID="LogOutBtn" runat="server" Text="LogOut" OnClick="LogOutBtn_Click"/>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
